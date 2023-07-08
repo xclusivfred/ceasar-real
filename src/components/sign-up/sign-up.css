@@ -1,0 +1,39 @@
+section {
+    padding: 2.4rem 0;
+    overflow: hidden;
+}
+
+.signup {
+    background: black !important;
+    color: white !important;
+}
+
+.signup-card {
+    margin-bottom: 3%;
+}
+
+.p-no-hidden-fee {
+    margin-top: -1.8%;
+}
+
+.p-text-upper {
+    margin-top: 4.9% !important;
+    margin-bottom: 1% !important;
+
+}
+
+.p-text {
+    margin-top: -1.9% !important;
+    margin-bottom: -.4% !important;
+
+}
+
+.login-link {
+    color: #fff;
+}
+
+.create-acct {
+    margin-top: 5%;
+}
+
+/*light section*/
