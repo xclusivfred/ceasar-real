@@ -5,6 +5,8 @@ import LoginPage from "./components/login/Login";
 import ResetPassword from "./components/reset-password/Reset-password";
 import SignUpPage from "./components/sign-up/Sign-up";
 import Dashboard from "./components/dashboard/Dashboard";
+import Profile from "./components/dashboard/Profile";
+import Entity from "./components/dashboard/Entity";
 import Home from "./components/home/Home";
 
 // import { FaEye, FaTimes } from "react-icons/fa";
@@ -18,6 +20,8 @@ function App() {
         <Route path="/sign-up" element={<SignUpPage />} />
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/entity" element={<Entity />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

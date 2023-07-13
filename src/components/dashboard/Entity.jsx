@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
 import './dashboard.css';
-import image1 from "../../assets/tv.png";
+// import image1 from "../../assets/tv.png";
 import image3 from "../../assets/group-773@2x.png";
 import image5 from "../../assets/frame-71@2x.png";
 import image6 from "../../assets/frame-711@2x.png";
@@ -15,7 +15,7 @@ import image7 from "../../assets/frame-712@2x.png";
 // import { Link } from "react-router-dom";
 
 
-const Dashboard = () => {
+const Entity = () => {
     const [style, setStyle] = useState("navbar-nav sidebar sidebar-light accordion");
 
     const changeStyle1 = () => {
@@ -157,97 +157,18 @@ const Dashboard = () => {
 
                             {/* <!-- Begin Page Content --> */}
                             <div className='main-content'>
-
-                                <section className='welcome' id='welcome'>
+                                <section className='my-profile'>
                                     <div className='container'>
-                                        <div className='row'>
-                                            <div className='col-md-8'>
-                                                <p>My Portfolio</p>
-                                                <h2>Good Evening Dev Ed</h2>
-                                                <p>It looks like you haven't made your first investment with us yet. Once you do invest, your investment will appear below.</p>
-                                            </div>
-                                            <div className='col-md-4'>
-                                                <div className="card signup-card">
-                                                    <div className="card-body">
-                                                        <h6 className="card-subtitle mb-2 text-center">Verify your identity</h6>
-                                                        <div className="card-body text-center">
-                                                            <button className="btn btn-dark" type="button">View offer</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <h5>Create a New Entity</h5>
+                                        <div className="card-body text-center">
+                                            <button className="btn btn-dark" type="button">Create Now</button>
                                         </div>
+                                        <h6>My Entity</h6>
+                                        <h4>Your registered investment entities</h4>
                                     </div>
                                 </section>
-                                <section className='investment'>
-                                    <div className='container'>
-                                        <div className='row row-invest'>
-                                            <div className='col-md-6'>
-                                                <h5>Check out our latest investment opportunities</h5>
-                                            </div>
-                                            <div className='col-md-6'></div>
-                                        </div>
 
 
-                                        <div className="row row-cards">
-                                            <div className="col-md-4 row-cards">
-                                                <div className="card">
-                                                    <ul className="list-group list-group-flush">
-                                                        <li className="list-group-item">Retail</li>
-                                                    </ul>
-                                                    <img src={image1} className="img-fluid" alt="..." />
-                                                    <div className="card-body text-center list-header">
-                                                        <button className="btn btn-dark" type="button">View offer</button>
-                                                    </div>
-                                                    <ul className="list-group list-group-flush">
-                                                        <li className="list-group-item text-center"></li>
-                                                    </ul>
-
-                                                </div>
-                                            </div>
-                                            <div className="col-md-4 row-cards">
-                                                <div className="card">
-                                                    <ul className="list-group list-group-flush">
-                                                        <li className="list-group-item">Retail</li>
-                                                    </ul>
-                                                    <img src={image1} className="img-fluid" alt="..." />
-                                                    <div className="card-body text-center list-header">
-                                                        <button className="btn btn-dark" type="button">View offer</button>
-                                                    </div>
-                                                    <ul className="list-group list-group-flush">
-                                                        <li className="list-group-item text-center"></li>
-                                                    </ul>
-
-                                                </div>
-                                            </div>
-                                            <div className="col-md-4 row-cards">
-                                                <div className="card">
-                                                    <ul className="list-group list-group-flush">
-                                                        <li className="list-group-item">Retail</li>
-                                                    </ul>
-                                                    <img src={image1} className="img-fluid" alt="..." />
-                                                    <div className="card-body text-center list-header">
-                                                        <button className="btn btn-dark" type="button">View offer</button>
-                                                    </div>
-                                                    <ul className="list-group list-group-flush">
-                                                        <li className="list-group-item text-center"></li>
-                                                    </ul>
-
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <div className="row row-label">
-                                            <div className="col"></div>
-                                            <div className="card-body text-center list-header">
-                                                <button className="btn btn-dark" type="button">Browse All Investments</button>
-                                            </div>
-
-                                            <div className="col"></div>
-                                        </div>
-                                    </div>
-                                </section>
 
                             </div>
 
@@ -326,4 +247,4 @@ const Dashboard = () => {
     )
 }
 
-export default Dashboard;
+export default Entity;
